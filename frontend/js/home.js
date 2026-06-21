@@ -1,5 +1,6 @@
 const API_URL = "http://localhost:3000/pocoes";
 
+// Busca as poções na API e exibe na página principal
 async function carregarPocoes() {
 
     try {
@@ -10,6 +11,7 @@ async function carregarPocoes() {
 
         const lista = document.getElementById("lista-pocoes");
 
+        // Limpa a lista antes de renderizar os cards
         lista.innerHTML = "";
 
         pocoes.forEach((pocao) => {
@@ -32,8 +34,11 @@ async function carregarPocoes() {
         });
 
     } catch (erro) {
+
+        // Exibe erros de comunicação com a API
         console.error(erro);
     }
 }
 
+// Carrega as poções ao abrir a página
 carregarPocoes();

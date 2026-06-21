@@ -43,7 +43,6 @@ frontend/
 |
 ├── js/
 │   ├── admin.js
-│   ├── api.js
 │   └── home.js
 |
 ├── admin.html

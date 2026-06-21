@@ -1,5 +1,6 @@
 import Pocao from "./Pocao.js";
 
+// Insere as poções iniciais da loja no banco de dados
 async function popularBanco() {
   await Pocao.bulkCreate([
     {
@@ -57,6 +58,7 @@ async function popularBanco() {
     }
   ]);
 
+  // Confirma a inserção dos dados no terminal
   console.log("Poções inseridas!");
 }
 

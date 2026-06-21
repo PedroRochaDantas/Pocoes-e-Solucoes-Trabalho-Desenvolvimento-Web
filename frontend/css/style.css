@@ -138,11 +138,6 @@ h1, h2, h3 {
     flex-wrap: wrap;
 }
 
-#historia {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .historia-card {
     margin: 0;
 
